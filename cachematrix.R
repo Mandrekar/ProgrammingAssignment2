@@ -26,7 +26,7 @@ cacheSolve <- function(x, ...) {
         }
         data <- x$get()
         # Compute the inverse of the matrix using matrix multiplication
-        m <- solve(data) %*% data
+        m <- solve(data)
         x$setInverse(m)
         m
 }
